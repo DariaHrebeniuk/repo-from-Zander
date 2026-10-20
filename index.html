@@ -2,17 +2,29 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!-- Scales the page to the device width (needed for phones/tablets). -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pricing Plans — HTML version</title>
+
+    <!-- Fonts: speed up Google Fonts by opening the connection early. -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Fonts: Inter (400 / 500 / 600 / 700). Used on titles, prices, buttons. -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Styles: all layout, color, and type for this page. -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Badge: labels this file as the static HTML version. -->
     <p class="page-label"><strong>HTML version</strong> — static markup</p>
+
+    <!-- Row: holds all pricing cards side by side. -->
     <div class="cards-container">
+
+        <!-- Card: Hobby (free tier). -->
         <div class="card">
+            <!-- Top: title, price, and feature list (button sits at the bottom). -->
             <div class="card-top">
                 <h3 class="card-title">Hobby</h3>
                 <p class="card-price">
@@ -36,8 +48,11 @@
                     </ul>
                 </div>
             </div>
+            <!-- CTA: secondary (light) button. -->
             <button class="download-button secondary">Download</button>
         </div>
+
+        <!-- Card: Pro (paid monthly). -->
         <div class="card">
             <div class="card-top">
                 <h3 class="card-title">Pro</h3>
@@ -67,8 +82,44 @@
                     </ul>
                 </div>
             </div>
+            <!-- CTA: primary (dark) button. -->
             <button class="download-button primary">Get Pro</button>
         </div>
+
+        <!-- Card: Enterprise (highest tier). -->
+        <div class="card">
+            <div class="card-top">
+                <h3 class="card-title">Enterprise</h3>
+                <p class="card-price">
+                    <span class="card-price-amount">$40</span>
+                    <span class="card-price-period">/mo.</span>
+                </p>
+                <div class="card-content">
+                    <p class="includes-text">Everything in Hobby, plus:</p>
+                    <ul class="features-list">
+                        <li>
+                            <span class="checkmark">✓</span>
+                            Extended limits on Agent
+                        </li>
+                        <li>
+                            <span class="checkmark">✓</span>
+                            Unlimited Tab completions
+                        </li>
+                        <li>
+                            <span class="checkmark">✓</span>
+                            Background Agents
+                        </li>
+                        <li>
+                            <span class="checkmark">✓</span>
+                            Maximum context windows
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- CTA: primary (dark) button. -->
+            <button class="download-button primary">Get Pro</button>
+        </div>
+
     </div>
 </body>
 </html>
